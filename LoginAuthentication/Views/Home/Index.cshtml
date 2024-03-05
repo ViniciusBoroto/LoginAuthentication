@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container-sm w-50 p-3">
+        <div class="border p-4 rounded">
+            <h1>Sign in</h1>
+            <form asp-action="Sign in">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+        </div>
+        <div class="border my-3 text-center rounded container d-flex justify-content-center">
+            <div class="m-2"><span>Don't have an account?</span></div>
+            <div class="m-2"><a asp-action="CreateAccount">Create an account</a></div>
+        </div>
+    </div>
+
+
+</div>
